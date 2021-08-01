@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Root>
-  <Parameters dayMin="5" dayMax="14"/>
+  <Parameters dayMin="14" dayMax="14"/>
   <CurrentRoll name="" date=""/>
   <List>
     <Map name="Caucasus">
@@ -45,6 +45,40 @@
       <module name="Mirage 2000C"/>
       <module name="Mi-8"/>
     </Map>
+	  
+	  
+	  
+	  <Map name="Syria_Modern">
+		  <module>
+			  <module name="Ka-50"/>
+			  <module name="Mi-24"/>
+			  <module name="SA342"/>
+			  <module name="Mi-8"/>
+			  <module name="UH-1H"/>
+		  </module>
+		  <module>
+			  <module name="AV8BNA"/>
+			  <module name="A10C"/>
+		  </module>
+		  <module>
+			  <module>
+				  <module name="MiG-21"/>
+				  <module name="F5e"/>
+				  <module name="L39"/>
+				  <module name="AJS37"/>
+			  </module>
+			  <module>
+				  <module name="Su-25"/>
+				  <module name="Su-27"/>
+				  <module name="MiG-29"/>
+				  <module name="F15"/>
+			  </module>
+		  </module>
+		  <module name="F-16C"/>
+		  <module name="M2000C"/>
+	  </Map>
+
+	  
   </List>
   
 </Root>

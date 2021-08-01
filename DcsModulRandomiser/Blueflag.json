@@ -1,0 +1,47 @@
+﻿{
+	"dayMin": 14,
+	"dayMax": 14,
+	"currentRollName": "",
+	"currentRollDate": "",
+
+	"Maps":[
+		{
+			"mapName": "Syria_Modern",
+			"planeSet":
+			[
+				{"Categorie": "Helicopter", 
+				[
+					{"Plane": "Ka-50"},
+					{"Plane": "Mi-24"},
+					{"Plane": "SA342"},
+					{"Plane": "Mi-8"},
+					{"Plane": "UH-1H"}
+				]},
+				{"Categorie": "Ground-Attack", 
+				[
+					{"Plane": "AV-8BNA"},
+					{"Plane": "A-10C"}
+				]},
+				{"Categorie": "Bad", 
+				[
+					{"Categorie": "LowTech",
+					[
+						{"Plane": "MiG-21Bis"},
+						{"Plane": "F-5e"},
+						{"Plane": "L-39"},
+						{"Plane": "AJS-37"}
+					]},
+					{"Categorie": "FC3",
+					[
+						{"Plane":"Su-25"},
+						{"Plane":"Su-27"},
+						{"Plane":"MiG-29"},
+						{"Plane":"F15"}
+					]}
+				]},
+				{"Plane": "F-16C"},
+				{"Plane": "M-2000C"}
+			]
+		}
+	]
+}
