@@ -9,38 +9,46 @@
 			"mapName": "Syria_Modern",
 			"planeSet":
 			[
-				{"Categorie": "Helicopter", 
-				[
-					{"Plane": "Ka-50"},
-					{"Plane": "Mi-24"},
-					{"Plane": "SA342"},
-					{"Plane": "Mi-8"},
-					{"Plane": "UH-1H"}
+				{"Module": "Helicopter", 
+				"Childs":[
+					{"Module": "Ka-50"},
+					{"Module": "Mi-24"},
+					{"Module": "SA342"},
+					{"Module": "Mi-8"},
+					{"Module": "UH-1H"}
 				]},
-				{"Categorie": "Ground-Attack", 
-				[
-					{"Plane": "AV-8BNA"},
-					{"Plane": "A-10C"}
-				]},
-				{"Categorie": "Bad", 
-				[
-					{"Categorie": "LowTech",
-					[
-						{"Plane": "MiG-21Bis"},
-						{"Plane": "F-5e"},
-						{"Plane": "L-39"},
-						{"Plane": "AJS-37"}
-					]},
-					{"Categorie": "FC3",
-					[
-						{"Plane":"Su-25"},
-						{"Plane":"Su-27"},
-						{"Plane":"MiG-29"},
-						{"Plane":"F15"}
-					]}
-				]},
-				{"Plane": "F-16C"},
-				{"Plane": "M-2000C"}
+				{
+					"Module": "Ground-Attack",
+					"Childs": [
+						{ "Module": "AV-8BNA" },
+						{ "Module": "A-10C" }
+					]
+				},
+				{
+					"Module": "Bad",
+					"Childs": [
+						{
+							"Module": "LowTech",
+							"Childs": [
+								{ "Module": "MiG-21Bis" },
+								{ "Module": "F-5e" },
+								{ "Module": "L-39" },
+								{ "Module": "AJS-37" }
+							]
+						},
+						{
+							"Module": "FC3",
+							"Childs": [
+								{ "Module": "Su-25" },
+								{ "Module": "Su-27" },
+								{ "Module": "MiG-29" },
+								{ "Module": "F15" }
+							]
+						}
+					]
+				},
+				{"Module": "F-16C"},
+				{"Module": "M-2000C"}
 			]
 		}
 	]
