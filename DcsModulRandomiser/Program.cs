@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text.Json;
 using System.IO;
+using Newtonsoft.Json;
 
 namespace DcsModulRandomiser
 {
@@ -17,8 +18,8 @@ namespace DcsModulRandomiser
             try
             {
                 string jsonString = File.ReadAllText(args[0]);
-                dMRProfile = JsonSerializer.Deserialize<DMRProfile>(jsonString);
-
+                //dMRProfile = JsonSerializer.Deserialize<DMRProfile>(jsonString);
+                dMRProfile = JsonConvert.DeserializeObject<DMRProfile>(jsonString);
                 if (args.Length >= 2)
                 {
                     for(int i=1; i<args.Length; i++)
@@ -63,11 +64,11 @@ namespace DcsModulRandomiser
 
             bool IsDateExpired()
             {
-                if(dMRProfile.currentRollDate == null)
+                if(dMRProfile.currentRollDate == null || dMRProfile.currentRollDate == "")
                 {
                     return true;
                 }
-                return DateTime.Today > dMRProfile.currentRollDate;
+                return DateTime.Today > DateTime.Parse(dMRProfile.currentRollDate);
             }
 
             string getRandomModule(string forcedMap)
@@ -92,13 +93,13 @@ namespace DcsModulRandomiser
 
 
                 //Set CurrentRoll Node
-                dMRProfile.currentRollName = module.name;
+                dMRProfile.currentRollName = map.mapName + " : " + module.name;
 
                 //Set a random date
 
                 DateTime rdmDate = DateTime.Today;
                 int rdm = (random.Next(dMRProfile.dayMin, dMRProfile.dayMax));
-                dMRProfile.currentRollDate = rdmDate.AddDays(rdm);
+                dMRProfile.currentRollDate = rdmDate.AddDays(rdm).ToString();
 
                 //Save
                 Serialize(args[0]);
@@ -108,8 +109,7 @@ namespace DcsModulRandomiser
 
             void Serialize(string Path)
             {
-                var options = new JsonSerializerOptions { WriteIndented = true };
-                string jsonString = JsonSerializer.Serialize(dMRProfile, options);
+                string jsonString = JsonConvert.SerializeObject(dMRProfile, Formatting.Indented);
                 File.WriteAllText(Path, jsonString);
             }
 
@@ -121,13 +121,13 @@ namespace DcsModulRandomiser
 
             Map GetRandMap()
             {
-                int rdm = (random.Next(0, dMRProfile.maps.Count));
-                return dMRProfile.maps[rdm];
+                int rdm = (random.Next(0, dMRProfile.Maps.Count));
+                return dMRProfile.Maps[rdm];
             }
 
             Map GetMapByName(string mapName)
             {
-                foreach (Map chMap in dMRProfile.maps)
+                foreach (Map chMap in dMRProfile.Maps)
                 {
                     if (chMap.mapName == mapName)
                     {
@@ -144,8 +144,8 @@ namespace DcsModulRandomiser
                     return node;
                 }
 
-                int rdm = random.Next(0, node.childs.Count);
-                return RecGetRandNode(node.childs[rdm]);
+                int rdm = random.Next(0, node.Childs.Count);
+                return RecGetRandNode(node.Childs[rdm]);
             }
 
             Module GetRandNodeInMap(Map map)

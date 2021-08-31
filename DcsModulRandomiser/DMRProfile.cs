@@ -8,9 +8,9 @@ namespace DcsModulRandomiser
         public int dayMin;
         public int dayMax;
         public string currentRollName;
-        public DateTime currentRollDate;
+        public string currentRollDate;
 
-        public List<Map> maps;
+        public List<Map> Maps;
     }
 
     public class Map
@@ -22,7 +22,7 @@ namespace DcsModulRandomiser
     public class Module
     {
         public string name;
-        public List<Module> childs;
-        public bool IsALeave { get => childs.Count == 0; }
+        public List<Module> Childs;
+        public bool IsALeave { get => Childs == null || Childs.Count == 0; }
     }
 }

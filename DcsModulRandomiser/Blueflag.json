@@ -1,55 +1,128 @@
-﻿{
-	"dayMin": 14,
-	"dayMax": 14,
-	"currentRollName": "",
-	"currentRollDate": "",
-
-	"Maps":[
-		{
-			"mapName": "Syria_Modern",
-			"planeSet":
-			[
-				{"Module": "Helicopter", 
-				"Childs":[
-					{"Module": "Ka-50"},
-					{"Module": "Mi-24"},
-					{"Module": "SA342"},
-					{"Module": "Mi-8"},
-					{"Module": "UH-1H"}
-				]},
-				{
-					"Module": "Ground-Attack",
-					"Childs": [
-						{ "Module": "AV-8BNA" },
-						{ "Module": "A-10C" }
-					]
-				},
-				{
-					"Module": "Bad",
-					"Childs": [
-						{
-							"Module": "LowTech",
-							"Childs": [
-								{ "Module": "MiG-21Bis" },
-								{ "Module": "F-5e" },
-								{ "Module": "L-39" },
-								{ "Module": "AJS-37" }
-							]
-						},
-						{
-							"Module": "FC3",
-							"Childs": [
-								{ "Module": "Su-25" },
-								{ "Module": "Su-27" },
-								{ "Module": "MiG-29" },
-								{ "Module": "F15" }
-							]
-						}
-					]
-				},
-				{"Module": "F-16C"},
-				{"Module": "M-2000C"}
-			]
-		}
-	]
+{
+  "dayMin": 14,
+  "dayMax": 14,
+  "currentRollName": "Syria_Modern : Su-25",
+  "currentRollDate": "14/09/2021 00:00:00",
+  "Maps": [
+    {
+      "mapName": "Syria_Modern",
+      "planeSet": [
+        {
+          "name": "Helicopter",
+          "Childs": [
+            {
+              "name": "Ka-50",
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "Mi-24",
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "SA342",
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "Mi-8",
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "UH-1H",
+              "Childs": null,
+              "IsALeave": true
+            }
+          ],
+          "IsALeave": false
+        },
+        {
+          "name": "Ground-Attack",
+          "Childs": [
+            {
+              "name": "AV-8BNA",
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "A-10C",
+              "Childs": null,
+              "IsALeave": true
+            }
+          ],
+          "IsALeave": false
+        },
+        {
+          "name": "Bad",
+          "Childs": [
+            {
+              "name": "LowTech",
+              "Childs": [
+                {
+                  "name": "MiG-21Bis",
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "F-5e",
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "L-39",
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "AJS-37",
+                  "Childs": null,
+                  "IsALeave": true
+                }
+              ],
+              "IsALeave": false
+            },
+            {
+              "name": "FC3",
+              "Childs": [
+                {
+                  "name": "Su-25/T",
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "Su-27",
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "MiG-29",
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "F15",
+                  "Childs": null,
+                  "IsALeave": true
+                }
+              ],
+              "IsALeave": false
+            }
+          ],
+          "IsALeave": false
+        },
+        {
+          "name": "F-16C",
+          "Childs": null,
+          "IsALeave": true
+        },
+        {
+          "name": "M-2000C",
+          "Childs": null,
+          "IsALeave": true
+        }
+      ]
+    }
+  ]
 }
