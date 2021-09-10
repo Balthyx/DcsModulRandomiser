@@ -28,17 +28,16 @@ namespace DcsModulRandomiser
                                 reroll = true;
                                 break;
 
-                            case "forceMap":
+                            case "forcemap":
                                 if(args.Length >= i + 2)
                                 {
                                     forceMap = args[i + 1];
                                 }
                                 else
                                 {
-                                    Console.WriteLine("ForceMap : No argument.");
+                                    Console.WriteLine("forcemap : No argument.");
                                 }
                                 break;
-                                
                         }
                     }
                 }
