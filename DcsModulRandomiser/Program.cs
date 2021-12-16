@@ -15,9 +15,19 @@ namespace DcsModulRandomiser
             string forceMap = null;
             try
             {
+
+                if(args.Length < 1)
+                {
+                    Console.WriteLine("No profil file given.");
+                    Console.ReadLine();
+                    return;
+                }
+
                 string jsonString = File.ReadAllText(args[0]);
                 //dMRProfile = JsonSerializer.Deserialize<DMRProfile>(jsonString);
                 dMRProfile = JsonConvert.DeserializeObject<DMRProfile>(jsonString);
+
+
                 if (args.Length >= 2)
                 {
                     for(int i=1; i<args.Length; i++)
@@ -41,6 +51,7 @@ namespace DcsModulRandomiser
                         }
                     }
                 }
+                
 
                 if (IsDateExpired() || reroll)
                 {
@@ -95,7 +106,7 @@ namespace DcsModulRandomiser
                 //Set a random date
 
                 DateTime rdmDate = DateTime.Today;
-                int rdm = (random.Next(dMRProfile.dayMin, dMRProfile.dayMax));
+                float rdm = (random.Next(dMRProfile.dayMin, dMRProfile.dayMax) * module.time_multiplier);
                 dMRProfile.currentRollDate = rdmDate.AddDays(rdm).ToString();
 
                 //Save
@@ -136,7 +147,7 @@ namespace DcsModulRandomiser
 
             Module RecGetRandNode(Module node)
             {
-                if (node.IsALeave)
+                if (node.IsALeave())
                 {
                     return node;
                 }
