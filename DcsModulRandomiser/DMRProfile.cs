@@ -21,7 +21,10 @@ namespace DcsModulRandomiser
     public class Module
     {
         public string name;
+        public float time_multiplier = 1;
         public List<Module> Childs;
-        public bool IsALeave { get => Childs == null || Childs.Count == 0; }
+        public bool IsALeave() {
+            return Childs == null || Childs.Count == 0; 
+        }
     }
 }
