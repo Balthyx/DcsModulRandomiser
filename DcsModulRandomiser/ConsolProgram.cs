@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 namespace DcsModulRandomiser
 {
-    class Program
+    class ConsolProgram
     {
         static void Main(string[] args)// arg0 doc, then reroll, forcemap mapname
         {
