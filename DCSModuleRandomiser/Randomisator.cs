@@ -6,9 +6,8 @@ using System.Windows;
 
 public static class Randomisator
 {
-    static DMRProfile dMRProfile;
     static Random random = new Random();
-    public static string Get(string profile_path, bool reroll = false, string forceMap = null)// arg0 doc, then reroll, forcemap mapname
+    public static string Get(string profile_path, bool reroll = false)// arg0 doc, then reroll, forcemap mapname
     {
         Random random = new Random();
 
@@ -16,17 +15,21 @@ public static class Randomisator
         {
             string jsonString = File.ReadAllText(profile_path);
             //dMRProfile = JsonSerializer.Deserialize<DMRProfile>(jsonString);
-            dMRProfile = JsonConvert.DeserializeObject<DMRProfile>(jsonString);
+            DMRProfile dMRProfile = JsonConvert.DeserializeObject<DMRProfile>(jsonString);
+            string roll;
 
-
-            if (IsDateExpired() || reroll)
+            if (IsDateExpired(dMRProfile) || reroll)
             {
-                return getRandomModule(forceMap, profile_path);
+                roll = RollNewModule(dMRProfile);
             }
             else
             {
-                return getCurrentModule();
+                roll = dMRProfile.currentRollName;
             }
+
+            //Save
+            Serialize(profile_path, dMRProfile);
+            return roll;
         }
         catch (Exception e)
         {
@@ -34,10 +37,10 @@ public static class Randomisator
             MessageBox.Show(e.Message);
             return null;
         }
-        
+
     }
 
-    static bool IsDateExpired()
+    static bool IsDateExpired(DMRProfile dMRProfile)
     {
         if (dMRProfile.currentRollDate == null || dMRProfile.currentRollDate == "")
         {
@@ -46,29 +49,15 @@ public static class Randomisator
         return DateTime.Today > DateTime.Parse(dMRProfile.currentRollDate);
     }
 
-    static string getRandomModule(string forcedMap, string profile_path)
+    static string RollNewModule(DMRProfile dMRProfile)
     {
-        //Console.WriteLine("Picking a random module");
-        Map map;
-        if (forcedMap != null)
-        {
-            map = GetMapByName(forcedMap);
-            if (map == null)
-            {
-                //Console.WriteLine("ForceMap : Map not found : " + forcedMap);
-                return null;
-            }
-        }
-        else
-        {
-            map = GetRandMap();
-        }
+        //Picking a random module
 
-        Module module = GetRandNodeInMap(map);
+        Module module = GetRandomModule(dMRProfile);
 
 
         //Set CurrentRoll Node
-        dMRProfile.currentRollName = map.mapName + " : " + module.name;
+        dMRProfile.currentRollName = GetRandomPeriode(module) + " : " + module.name;
 
         //Set a random date
 
@@ -76,56 +65,54 @@ public static class Randomisator
         float rdm = (random.Next(dMRProfile.dayMin, dMRProfile.dayMax) * module.time_multiplier);
         dMRProfile.currentRollDate = rdmDate.AddDays(rdm).ToString();
 
-        //Save
-        Serialize(profile_path);
+        
 
         return dMRProfile.currentRollName;
     }
 
-    static void Serialize(string Path)
+    static void Serialize(string Path, DMRProfile dMRProfile)
     {
         string jsonString = JsonConvert.SerializeObject(dMRProfile, Formatting.Indented);
         File.WriteAllText(Path, jsonString);
     }
 
-    static string getCurrentModule()
+    static Module GetRandomModule(DMRProfile dMR_Profile)
     {
-        Console.WriteLine("Picking last module");
-        return dMRProfile.currentRollName;
-    }
-
-    static Map GetRandMap()
-    {
-        int rdm = (random.Next(0, dMRProfile.Maps.Count));
-        return dMRProfile.Maps[rdm];
-    }
-
-    static Map GetMapByName(string mapName)
-    {
-        foreach (Map chMap in dMRProfile.Maps)
+        //Get TotalWeight
+        float totalWeight = 0;
+        foreach(Module module in dMR_Profile.Modules)
         {
-            if (chMap.mapName == mapName)
-            {
-                return chMap;
-            }
-        }
-        return null;
-    }
-
-    static Module RecGetRandNode(Module node)
-    {
-        if (node.IsALeave())
-        {
-            return node;
+            totalWeight += module.weight;
         }
 
-        int rdm = random.Next(0, node.Childs.Count);
-        return RecGetRandNode(node.Childs[rdm]);
+        //Pick random
+        float picked = (float)(random.NextDouble() * totalWeight);
+
+        foreach (Module module in dMR_Profile.Modules)
+        {
+            picked -= module.weight;
+            if (picked <= 0)
+                return module;
+        }
+        return dMR_Profile.Modules[dMR_Profile.Modules.Count - 1];
     }
 
-    static Module GetRandNodeInMap(Map map)
+    static string GetRandomPeriode(Module module)
     {
-        int rdm = random.Next(0, map.planeSet.Count);
-        return RecGetRandNode(map.planeSet[rdm]);
+        //Get TotalWeight
+        float totalWeight = module.ww2_weight + module.corea_weight + module.cW60_weight + module.cW80_weight + module.modern_weight;
+        float[] weights = new float[5] { module.ww2_weight, module.corea_weight, module.cW60_weight, module.cW80_weight, module.modern_weight };
+        string[] strPeriod = new string[5] { "WW2", "Corea", "CW60", "CW80", "Modern" };
+
+        //Pick random
+        float picked = (float)(random.NextDouble() * totalWeight);
+        for(int i=0; i< weights.Length; i++)
+        {
+            picked -= weights[i];
+            if (picked <= 0)
+                return strPeriod[i];
+        }
+
+        return strPeriod[strPeriod.Length - 1];
     }
 }
