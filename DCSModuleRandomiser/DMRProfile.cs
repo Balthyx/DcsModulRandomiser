@@ -18,15 +18,10 @@ namespace DCSModulRandomiser
         public float time_multiplier = 1;
         public float weight = 1;
 
-        public float[] periodWeights = new float[5] { 1, 1, 1, 1, 1 };
-    }
-
-    public enum TimePeriod
-    {
-        WW2,
-        Corea,
-        ColdWar60,
-        ColdWar80,
-        Modern
+        public float ww2_weight = 1;
+        public float corea_weight = 1;
+        public float cW60_weight = 1;
+        public float cW80_weight = 1;
+        public float modern_weight = 1;
     }
 }

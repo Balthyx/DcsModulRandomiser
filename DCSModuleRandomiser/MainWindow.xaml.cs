@@ -24,5 +24,12 @@ namespace DCSModuleRandomiser
         {
             InitializeComponent();
         }
+
+        protected override void OnInitialized(EventArgs e)
+        {
+            base.OnInitialized(e);
+            OutputField.Text = Randomisator.Get("Blueflag.json");
+
+        }
     }
 }
