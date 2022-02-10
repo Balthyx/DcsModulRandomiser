@@ -1,16 +1,15 @@
-﻿using System;
+﻿using DcsModulRandomiser.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace DcsModulRandomiser
 {
-    class WindowProgram
+    public partial class WindowProgram : Application
     {
-        static void Main(string[] args)// arg0 doc, then reroll, forcemap mapname
-        { 
 
-        }
     }
 }

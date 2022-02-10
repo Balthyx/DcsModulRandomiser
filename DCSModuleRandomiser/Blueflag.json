@@ -1,0 +1,900 @@
+{
+  "dayMin": 7,
+  "dayMax": 14,
+  "currentRollName": "PersianGulf_Modern : F-16C",
+  "currentRollDate": "09/02/2022 00:00:00",
+  "Maps": [
+    {
+      "mapName": "Syria_Modern",
+      "planeSet": [
+        {
+          "name": "Helicopter",
+          "time_multiplier": 1.0,
+          "Childs": [
+            {
+              "name": "Ka-50",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "Mi-24",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "SA342",
+              "time_multiplier": 0.5,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "Mi-8",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "UH-1H",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            }
+          ],
+          "IsALeave": false
+        },
+        {
+          "name": "Ground-Attack",
+          "time_multiplier": 1.0,
+          "Childs": [
+            {
+              "name": "AV-8BNA",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "A-10C",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            }
+          ],
+          "IsALeave": false
+        },
+        {
+          "name": "Bad",
+          "time_multiplier": 1.0,
+          "Childs": [
+            {
+              "name": "LowTech",
+              "time_multiplier": 1.0,
+              "Childs": [
+                {
+                  "name": "MiG-21Bis",
+                  "time_multiplier": 0.5,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "F-5e",
+                  "time_multiplier": 0.5,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "L-39",
+                  "time_multiplier": 0.5,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "AJS-37",
+                  "time_multiplier": 0.5,
+                  "Childs": null,
+                  "IsALeave": true
+                }
+              ],
+              "IsALeave": false
+            },
+            {
+              "name": "FC3",
+              "time_multiplier": 1.0,
+              "Childs": [
+                {
+                  "name": "Su-25/T",
+                  "time_multiplier": 0.5,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "Su-27",
+                  "time_multiplier": 0.5,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "MiG-29",
+                  "time_multiplier": 0.5,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "F15",
+                  "time_multiplier": 0.5,
+                  "Childs": null,
+                  "IsALeave": true
+                }
+              ],
+              "IsALeave": false
+            }
+          ],
+          "IsALeave": false
+        },
+        {
+          "name": "F-16C",
+          "time_multiplier": 1.0,
+          "Childs": null,
+          "IsALeave": true
+        },
+        {
+          "name": "M-2000C",
+          "time_multiplier": 1.0,
+          "Childs": null,
+          "IsALeave": true
+        }
+      ]
+    },
+    {
+      "mapName": "Normandie_WW2",
+      "planeSet": [
+        {
+          "name": "Spitfire",
+          "time_multiplier": 0.5,
+          "Childs": null,
+          "IsALeave": true
+        },
+        {
+          "name": "P-51",
+          "time_multiplier": 0.5,
+          "Childs": null,
+          "IsALeave": true
+        }
+      ]
+    },
+    {
+      "mapName": "PersianGulf_Modern",
+      "planeSet": [
+        {
+          "name": "Helicopter",
+          "time_multiplier": 1.0,
+          "Childs": [
+            {
+              "name": "Ka-50",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "Mi-24",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "SA342",
+              "time_multiplier": 0.6,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "Mi-8",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "UH-1H",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            }
+          ],
+          "IsALeave": false
+        },
+        {
+          "name": "Ground-Attack",
+          "time_multiplier": 1.0,
+          "Childs": [
+            {
+              "name": "AV-8BNA",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "A-10C",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            }
+          ],
+          "IsALeave": false
+        },
+        {
+          "name": "Bad",
+          "time_multiplier": 1.0,
+          "Childs": [
+            {
+              "name": "LowTech",
+              "time_multiplier": 1.0,
+              "Childs": [
+                {
+                  "name": "MiG-21Bis",
+                  "time_multiplier": 0.5,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "F-5e",
+                  "time_multiplier": 0.5,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "L-39",
+                  "time_multiplier": 0.5,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "AJS-37",
+                  "time_multiplier": 0.5,
+                  "Childs": null,
+                  "IsALeave": true
+                }
+              ],
+              "IsALeave": false
+            },
+            {
+              "name": "FC3",
+              "time_multiplier": 1.0,
+              "Childs": [
+                {
+                  "name": "Su-25/T",
+                  "time_multiplier": 0.3,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "Su-27",
+                  "time_multiplier": 0.3,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "MiG-29",
+                  "time_multiplier": 0.3,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "F15",
+                  "time_multiplier": 0.3,
+                  "Childs": null,
+                  "IsALeave": true
+                }
+              ],
+              "IsALeave": false
+            }
+          ],
+          "IsALeave": false
+        },
+        {
+          "name": "F-16C",
+          "time_multiplier": 1.0,
+          "Childs": null,
+          "IsALeave": true
+        },
+        {
+          "name": "M-2000C",
+          "time_multiplier": 1.0,
+          "Childs": null,
+          "IsALeave": true
+        }
+      ]
+    },
+    {
+      "mapName": "PersianGulf_CW",
+      "planeSet": [
+        {
+          "name": "Helicopter",
+          "time_multiplier": 1.0,
+          "Childs": [
+            {
+              "name": "Mi-24",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "SA342",
+              "time_multiplier": 0.6,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "Mi-8",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "UH-1H",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            }
+          ],
+          "IsALeave": false
+        },
+        {
+          "name": "Ground-Attack",
+          "time_multiplier": 1.0,
+          "Childs": [
+            {
+              "name": "AV-8BNA",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "AJS-37",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            }
+          ],
+          "IsALeave": false
+        },
+        {
+          "name": "Fighters",
+          "time_multiplier": 1.0,
+          "Childs": [
+            {
+              "name": "MiG-21Bis",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "F-5e",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            }
+          ],
+          "IsALeave": false
+        },
+        {
+          "name": "Bad",
+          "time_multiplier": 1.0,
+          "Childs": [
+            {
+              "name": "FC3",
+              "time_multiplier": 1.0,
+              "Childs": [
+                {
+                  "name": "Su-25",
+                  "time_multiplier": 0.3,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "A-10A",
+                  "time_multiplier": 0.3,
+                  "Childs": null,
+                  "IsALeave": true
+                }
+              ],
+              "IsALeave": false
+            },
+            {
+              "name": "L-39",
+              "time_multiplier": 0.5,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "MiG-15Bis",
+              "time_multiplier": 0.7,
+              "Childs": null,
+              "IsALeave": true
+            }
+          ],
+          "IsALeave": false
+        }
+      ]
+    },
+    {
+      "mapName": "Caucasus_80",
+      "planeSet": [
+        {
+          "name": "Helicopter",
+          "time_multiplier": 1.0,
+          "Childs": [
+            {
+              "name": "Ka-50",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "Mi-24",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "SA342",
+              "time_multiplier": 0.5,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "Mi-8",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "UH-1H",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            }
+          ],
+          "IsALeave": false
+        },
+        {
+          "name": "Ground-Attack",
+          "time_multiplier": 1.0,
+          "Childs": [
+            {
+              "name": "AV-8BNA",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "A-10C",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            }
+          ],
+          "IsALeave": false
+        },
+        {
+          "name": "Bad",
+          "time_multiplier": 1.0,
+          "Childs": [
+            {
+              "name": "LowTech",
+              "time_multiplier": 1.0,
+              "Childs": [
+                {
+                  "name": "MiG-21Bis",
+                  "time_multiplier": 0.5,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "F-5e",
+                  "time_multiplier": 0.5,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "L-39",
+                  "time_multiplier": 0.3,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "AJS-37",
+                  "time_multiplier": 0.4,
+                  "Childs": null,
+                  "IsALeave": true
+                }
+              ],
+              "IsALeave": false
+            },
+            {
+              "name": "FC3",
+              "time_multiplier": 1.0,
+              "Childs": [
+                {
+                  "name": "Su-25/T",
+                  "time_multiplier": 0.3,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "Su-27",
+                  "time_multiplier": 0.3,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "MiG-29",
+                  "time_multiplier": 0.3,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "F15",
+                  "time_multiplier": 0.3,
+                  "Childs": null,
+                  "IsALeave": true
+                }
+              ],
+              "IsALeave": false
+            }
+          ],
+          "IsALeave": false
+        },
+        {
+          "name": "F-16C",
+          "time_multiplier": 1.0,
+          "Childs": null,
+          "IsALeave": true
+        },
+        {
+          "name": "M-2000C",
+          "time_multiplier": 1.0,
+          "Childs": null,
+          "IsALeave": true
+        }
+      ]
+    },
+    {
+      "mapName": "Syria_80",
+      "planeSet": [
+        {
+          "name": "Helicopter",
+          "time_multiplier": 1.0,
+          "Childs": [
+            {
+              "name": "Ka-50",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "Mi-24",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "SA342",
+              "time_multiplier": 0.6,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "Mi-8",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "UH-1H",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            }
+          ],
+          "IsALeave": false
+        },
+        {
+          "name": "Ground-Attack",
+          "time_multiplier": 1.0,
+          "Childs": [
+            {
+              "name": "AV-8BNA",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "A-10C",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            }
+          ],
+          "IsALeave": false
+        },
+        {
+          "name": "Bad",
+          "time_multiplier": 1.0,
+          "Childs": [
+            {
+              "name": "LowTech",
+              "time_multiplier": 1.0,
+              "Childs": [
+                {
+                  "name": "MiG-21Bis",
+                  "time_multiplier": 0.5,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "F-5e",
+                  "time_multiplier": 0.5,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "L-39",
+                  "time_multiplier": 0.3,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "AJS-37",
+                  "time_multiplier": 0.4,
+                  "Childs": null,
+                  "IsALeave": true
+                }
+              ],
+              "IsALeave": false
+            },
+            {
+              "name": "FC3",
+              "time_multiplier": 1.0,
+              "Childs": [
+                {
+                  "name": "Su-25/T",
+                  "time_multiplier": 0.5,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "Su-27",
+                  "time_multiplier": 0.5,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "MiG-29",
+                  "time_multiplier": 0.5,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "F15",
+                  "time_multiplier": 0.5,
+                  "Childs": null,
+                  "IsALeave": true
+                }
+              ],
+              "IsALeave": false
+            }
+          ],
+          "IsALeave": false
+        },
+        {
+          "name": "F-16C",
+          "time_multiplier": 1.0,
+          "Childs": null,
+          "IsALeave": true
+        },
+        {
+          "name": "M-2000C",
+          "time_multiplier": 1.0,
+          "Childs": null,
+          "IsALeave": true
+        }
+      ]
+    },
+    {
+      "mapName": "Caucasus_CW",
+      "planeSet": [
+        {
+          "name": "Helicopter",
+          "time_multiplier": 1.0,
+          "Childs": [
+            {
+              "name": "Mi-24",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "SA342",
+              "time_multiplier": 0.5,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "Mi-8",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "UH-1H",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            }
+          ],
+          "IsALeave": false
+        },
+        {
+          "name": "Ground-Attack",
+          "time_multiplier": 1.0,
+          "Childs": [
+            {
+              "name": "AJS-37",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            }
+          ],
+          "IsALeave": false
+        },
+        {
+          "name": "Fighters",
+          "time_multiplier": 1.0,
+          "Childs": [
+            {
+              "name": "MiG-21Bis",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "F-5e",
+              "time_multiplier": 1.0,
+              "Childs": null,
+              "IsALeave": true
+            },
+            {
+              "name": "MiG-15Bis",
+              "time_multiplier": 0.5,
+              "Childs": null,
+              "IsALeave": true
+            }
+          ],
+          "IsALeave": false
+        },
+        {
+          "name": "Bad",
+          "time_multiplier": 1.0,
+          "Childs": [
+            {
+              "name": "FC3",
+              "time_multiplier": 1.0,
+              "Childs": [
+                {
+                  "name": "Su-25",
+                  "time_multiplier": 0.5,
+                  "Childs": null,
+                  "IsALeave": true
+                },
+                {
+                  "name": "A-10A",
+                  "time_multiplier": 0.5,
+                  "Childs": null,
+                  "IsALeave": true
+                }
+              ],
+              "IsALeave": false
+            },
+            {
+              "name": "L-39",
+              "time_multiplier": 0.5,
+              "Childs": null,
+              "IsALeave": true
+            }
+          ],
+          "IsALeave": false
+        }
+      ]
+    },
+    {
+      "mapName": "BFR",
+      "planeSet": [
+        {
+          "name": "A10C",
+          "time_multiplier": 1.0,
+          "Childs": null,
+          "IsALeave": true
+        },
+        {
+          "name": "AJS-37",
+          "time_multiplier": 1.0,
+          "Childs": null,
+          "IsALeave": true
+        },
+        {
+          "name": "AV-8BNA",
+          "time_multiplier": 1.0,
+          "Childs": null,
+          "IsALeave": true
+        },
+        {
+          "name": "F-16C",
+          "time_multiplier": 1.0,
+          "Childs": null,
+          "IsALeave": true
+        },
+        {
+          "name": "F-5e",
+          "time_multiplier": 1.0,
+          "Childs": null,
+          "IsALeave": true
+        },
+        {
+          "name": "Ka-50",
+          "time_multiplier": 1.0,
+          "Childs": null,
+          "IsALeave": true
+        },
+        {
+          "name": "L-39",
+          "time_multiplier": 1.0,
+          "Childs": null,
+          "IsALeave": true
+        },
+        {
+          "name": "M-2000C",
+          "time_multiplier": 1.0,
+          "Childs": null,
+          "IsALeave": true
+        },
+        {
+          "name": "Mi-24",
+          "time_multiplier": 1.0,
+          "Childs": null,
+          "IsALeave": true
+        },
+        {
+          "name": "Mi-8",
+          "time_multiplier": 1.0,
+          "Childs": null,
+          "IsALeave": true
+        },
+        {
+          "name": "MiG-15Bis",
+          "time_multiplier": 1.0,
+          "Childs": null,
+          "IsALeave": true
+        },
+        {
+          "name": "MiG-21Bis",
+          "time_multiplier": 1.0,
+          "Childs": null,
+          "IsALeave": true
+        },
+        {
+          "name": "SA342",
+          "time_multiplier": 1.0,
+          "Childs": null,
+          "IsALeave": true
+        },
+        {
+          "name": "UH-1H",
+          "time_multiplier": 1.0,
+          "Childs": null,
+          "IsALeave": true
+        }
+      ]
+    }
+  ]
+}

@@ -6,7 +6,7 @@ namespace DcsModulRandomiser
 {
     class ConsolProgram
     {
-        static void Main(string[] args)// arg0 doc, then reroll, forcemap mapname
+        void Main(string[] args)// arg0 doc, then reroll, forcemap mapname
         {
             Random random = new Random();
             
