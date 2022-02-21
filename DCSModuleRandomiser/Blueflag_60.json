@@ -1,0 +1,60 @@
+{
+  "name": "BlueFlag 60",
+  "Modules": [
+    {
+      "name": "MiG-15bis",
+      "time_multiplier": 0.3,
+      "weight": 1
+    },
+    {
+      "name": "UH-1H",
+      "time_multiplier": 1,
+      "weight": 1
+    },
+    {
+      "name": "MiG-21bis",
+      "time_multiplier": 1,
+      "weight": 1
+    },
+    {
+      "name": "F-5E",
+      "time_multiplier": 1,
+      "weight": 1
+    },
+    {
+      "name": "L-39",
+      "time_multiplier": 0.5,
+      "weight": 0.5
+    },
+    {
+      "name": "Su25",
+      "time_multiplier": 0.1,
+      "weight": 0.05
+    },
+    {
+      "name": "Mi-24P",
+      "time_multiplier": 1,
+      "weight": 1
+    },
+    {
+      "name": "Sa-342M Gazelle",
+      "time_multiplier": 0.8,
+      "weight": 0.5
+    },
+    {
+      "name": "Mi-8MTV2",
+      "time_multiplier": 1,
+      "weight": 1
+    },
+    {
+      "name": "AJS-37 Viggen",
+      "time_multiplier": 1,
+      "weight": 0.75
+    },
+    {
+      "name": "AV-8B N/A",
+      "time_multiplier": 1,
+      "weight": 0.8
+    }
+  ]
+}

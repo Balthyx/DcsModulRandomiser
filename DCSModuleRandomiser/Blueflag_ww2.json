@@ -1,0 +1,15 @@
+{
+  "name": "BlueFlag WW2",
+  "Modules": [
+    {
+      "name": "Spitfire LF Mk.IX",
+      "time_multiplier": 0.3,
+      "weight": 0.25
+    },
+    {
+      "name": "P-51D-25",
+      "time_multiplier": 0.3,
+      "weight": 0.25
+    }
+  ]
+}
