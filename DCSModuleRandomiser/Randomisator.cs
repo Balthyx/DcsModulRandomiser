@@ -41,11 +41,11 @@ public static class Randomisator
 
     static bool IsDateExpired(DMRProfile dMRProfile)
     {
-        if (dMRProfile.currentRollDate == null || dMRProfile.currentRollDate == "")
+        if (dMRProfile.currentRollDate == null)
         {
             return true;
         }
-        return DateTime.Today > DateTime.Parse(dMRProfile.currentRollDate);
+        return DateTime.Today > dMRProfile.currentRollDate;
     }
 
     static string RollNewModule(DMRProfile dMRProfile)
@@ -75,7 +75,7 @@ public static class Randomisator
 
         DateTime rdmDate = DateTime.Today;
         float rdm = (random.Next(dMRProfile.dayMin, dMRProfile.dayMax) * module.Key.time_multiplier);
-        dMRProfile.currentRollDate = rdmDate.AddDays(rdm).ToString();
+        dMRProfile.currentRollDate = rdmDate.AddDays(rdm);
 
         
 

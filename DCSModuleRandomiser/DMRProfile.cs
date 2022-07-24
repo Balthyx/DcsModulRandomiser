@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace DCSModulRandomiser
 {
@@ -7,7 +8,7 @@ namespace DCSModulRandomiser
         public int dayMin;
         public int dayMax;
         public string currentRollName;
-        public string currentRollDate;
+        public DateTime currentRollDate;
 
         public List<string> serverProfiles;
     }

@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DCSModuleRandomiser"
         mc:Ignorable="d"
-        Title="DCS Module Randomiser" Height="75" Width="340" ResizeMode="NoResize">
+        Title="DCS Module Randomiser" Height="119" Width="344" ResizeMode="NoResize">
     <Grid>
-
-        <Label Content="Current module : "/>
-        <TextBox x:Name="OutputField" Text="F-16C | Persian Gulf Modern" TextWrapping="Wrap" Margin="100,5,5,5" IsEnabled="False"/>
-
+        <TextBox x:Name="OutputField" Text="F-16C | Persian Gulf Modern" TextWrapping="Wrap" Margin="100,5,5,74" IsEnabled="False"/>
+        <Label>
+            <Button Content="Reroll" Height="25"/>
+        </Label>
     </Grid>
 </Window>
