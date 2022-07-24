@@ -20,6 +20,8 @@ namespace DCSModuleRandomiser
     /// </summary>
     public partial class MainWindow : Window
     {
+        private const string PROFIL_FILE = "RProfil.json";
+
         public MainWindow()
         {
             InitializeComponent();
@@ -28,8 +30,13 @@ namespace DCSModuleRandomiser
         protected override void OnInitialized(EventArgs e)
         {
             base.OnInitialized(e);
-            OutputField.Text = Randomisator.Get("Blueflag.json");
+            OutputField.Text = Randomisator.Get(PROFIL_FILE);
+            BtnReroll.Click += BtnReroll_Click;
+        }
 
+        private void BtnReroll_Click(object sender, RoutedEventArgs e)
+        {
+            OutputField.Text = Randomisator.Get(PROFIL_FILE, true);
         }
     }
 }

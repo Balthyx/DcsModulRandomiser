@@ -12,31 +12,23 @@ public static class Randomisator
     public static string Get(string profile_path, bool reroll = false)// arg0 doc, then reroll, forcemap mapname
     {
         Random random = new Random();
-        try
-        {
-            string jsonString = File.ReadAllText(profile_path);
-            DMRProfile dMRProfile = JsonConvert.DeserializeObject<DMRProfile>(jsonString);
-            string roll;
 
-            if (IsDateExpired(dMRProfile) || reroll)
-            {
-                roll = RollNewModule(dMRProfile);
-            }
-            else
-            {
-                roll = dMRProfile.currentRollName;
-            }
+        string jsonString = File.ReadAllText(profile_path);
+        DMRProfile dMRProfile = JsonConvert.DeserializeObject<DMRProfile>(jsonString);
+        string roll;
 
-            //Save
-            Serialize(profile_path, dMRProfile);
-            return roll;
-        }
-        catch (Exception e)
+        if (IsDateExpired(dMRProfile) || reroll)
         {
-            Console.WriteLine(e);
-            MessageBox.Show(e.Message);
-            return null;
+            roll = RollNewModule(dMRProfile);
         }
+        else
+        {
+            roll = dMRProfile.currentRollName;
+        }
+
+        //Save
+        Serialize(profile_path, dMRProfile);
+        return roll;
     }
 
     static bool IsDateExpired(DMRProfile dMRProfile)
