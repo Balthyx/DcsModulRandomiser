@@ -7,7 +7,7 @@ namespace DCSModuleRandomiser
 {
     class ModulMergedProfil
     {
-        Random random = new Random();
+        private readonly Random m_random = new Random();
 
         public Module module;
         public Dictionary<Module, string> servers;
@@ -15,9 +15,11 @@ namespace DCSModuleRandomiser
 
         public ModulMergedProfil(string name, float weight)
         {
-            module = new Module();
-            module.name = name;
-            module.weight = weight;
+            module = new Module
+            {
+                name = name,
+                weight = weight
+            };
             servers = new Dictionary<Module, string>();
         }
 
@@ -31,7 +33,7 @@ namespace DCSModuleRandomiser
             }
 
             //Pick random
-            float picked = (float)(random.NextDouble() * totalWeight);
+            float picked = (float)(m_random.NextDouble() * totalWeight);
 
             foreach (KeyValuePair<Module, string> module in servers)
             {

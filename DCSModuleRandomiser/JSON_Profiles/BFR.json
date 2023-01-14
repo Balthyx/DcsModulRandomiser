@@ -1,0 +1,90 @@
+{
+  "name": "BFR",
+  "Modules": [
+    {
+      "name": "UH-1H",
+      "time_multiplier": 1,
+      "weight": 1
+    },
+    {
+      "name": "MiG-21bis",
+      "time_multiplier": 1,
+      "weight": 1
+    },
+    {
+      "name": "F-5E",
+      "time_multiplier": 1,
+      "weight": 1
+    },
+    {
+      "name": "L-39",
+      "time_multiplier": 0.5,
+      "weight": 0.5
+    },
+    {
+      "name": "Su25",
+      "time_multiplier": 0.1,
+      "weight": 0.05
+    },
+    {
+      "name": "Mi-24P",
+      "time_multiplier": 1,
+      "weight": 1
+    },
+    {
+      "name": "MiG-29",
+      "time_multiplier": 0.1,
+      "weight": 0.05
+    },
+    {
+      "name": "Su-27",
+      "time_multiplier": 0.1,
+      "weight": 0.05
+    },
+    {
+      "name": "F-15C",
+      "time_multiplier": 0.1,
+      "weight": 0.05
+    },
+    {
+      "name": "Mirage2000C",
+      "time_multiplier": 1,
+      "weight": 1
+    },
+    {
+      "name": "Sa-342M Gazelle",
+      "time_multiplier": 0.8,
+      "weight": 0.5
+    },
+    {
+      "name": "Mi-8MTV2",
+      "time_multiplier": 1,
+      "weight": 1
+    },
+    {
+      "name": "AJS-37 Viggen",
+      "time_multiplier": 1,
+      "weight": 0.5
+    },
+    {
+      "name": "KA-50",
+      "time_multiplier": 1,
+      "weight": 1
+    },
+    {
+      "name": "AV-8B N/A",
+      "time_multiplier": 1,
+      "weight": 0.75
+    },
+    {
+      "name": "F-16C",
+      "time_multiplier": 1,
+      "weight": 1
+    },
+    {
+      "name": "A-10C",
+      "time_multiplier": 1,
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "dayMin": 7,
+  "dayMax": 10,
+  "currentRollName": "Mi-8MTV2 : BlueFlag 60",
+  "currentRollDate": "2023-01-24T00:00:00+01:00",
+  "serverProfiles": [
+    "JSON_Profiles/Blueflag_ww2.json",
+    "JSON_Profiles/Blueflag_60.json",
+    "JSON_Profiles/Blueflag_80.json",
+    "JSON_Profiles/Blueflag_Modern.json",
+    "JSON_Profiles/Enigma.json",
+    "JSON_Profiles/BFR.json"
+  ]
+}

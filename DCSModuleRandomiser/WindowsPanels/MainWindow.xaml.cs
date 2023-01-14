@@ -20,7 +20,7 @@ namespace DCSModuleRandomiser
     /// </summary>
     public partial class MainWindow : Window
     {
-        private const string PROFIL_FILE = "RProfil.json";
+        private const string PROFIL_FILE = "JSON_Profiles/RProfil.json";
 
         public MainWindow()
         {

@@ -7,12 +7,12 @@ namespace DCSModuleRandomiser
 {
     static class ProfilUtils
     {
-        public static List<ModulMergedProfil> MergeSrvProfiles(List<ServerProfile> serverProfiles)
+        public static List<ModulMergedProfil> MergeSrvProfiles(List<ServerProfile> server_profiles)
         {
             List<ModulMergedProfil> outProfiles = new List<ModulMergedProfil>();
 
             ModulMergedProfil currentModule;
-            foreach(ServerProfile serverProfile in serverProfiles)
+            foreach(ServerProfile serverProfile in server_profiles)
             {
                 foreach(Module module in serverProfile.modules)
                 {
