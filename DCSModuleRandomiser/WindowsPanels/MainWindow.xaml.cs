@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DCSModuleRandomiser.WindowsPanels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,6 +22,7 @@ namespace DCSModuleRandomiser
     public partial class MainWindow : Window
     {
         private const string PROFIL_FILE = "JSON_Profiles/RProfil.json";
+        private ProfilEditor m_profilEditor;
 
         public MainWindow()
         {
@@ -37,6 +39,19 @@ namespace DCSModuleRandomiser
         private void BtnReroll_Click(object sender, RoutedEventArgs e)
         {
             OutputField.Text = Randomisator.Get(PROFIL_FILE, true);
+        }
+
+        private void BT_Edit_Click(object sender, RoutedEventArgs e)
+        {
+            if(m_profilEditor == null)
+            {
+                m_profilEditor = new ProfilEditor(PROFIL_FILE);
+                m_profilEditor.Show();
+            }
+            else
+            {
+                m_profilEditor.Activate();
+            }
         }
     }
 }

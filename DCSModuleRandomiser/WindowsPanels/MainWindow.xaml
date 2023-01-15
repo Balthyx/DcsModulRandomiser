@@ -7,9 +7,10 @@
         mc:Ignorable="d"
         Title="DCS Module Randomiser" Height="119" Width="344" ResizeMode="NoResize">
     <Grid>
+        <StackPanel Margin="0,0,244,0" Grid.Row="2" HorizontalAlignment="Left" MinWidth="100" MaxWidth="100" Width="80">
+            <Button x:Name="BtnReroll" Content="Reroll" Height="25" MinHeight="25" MaxHeight="25" MinWidth="80" MaxWidth="80" Margin="0,5,0,5"/>
+            <Button x:Name="BT_Edit" Content="Profil Editor" Height="25" Click="BT_Edit_Click" MinHeight="25" MaxHeight="25" MinWidth="80" MaxWidth="80"/>
+        </StackPanel>
         <TextBox x:Name="OutputField" Text="F-16C | Persian Gulf Modern" TextWrapping="Wrap" Margin="100,5,5,5" IsEnabled="False"/>
-        <Label>
-            <Button x:Name="BtnReroll" Content="Reroll" Height="25"/>
-        </Label>
     </Grid>
 </Window>

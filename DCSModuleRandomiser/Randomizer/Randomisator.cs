@@ -17,8 +17,8 @@ public static class Randomisator
     /// <returns></returns>
     public static string Get(string profile_path, bool reroll = false)// arg0 doc, then reroll, forcemap mapname
     {
-        string jsonString = File.ReadAllText(profile_path);
-        DMRProfile dMRProfile = JsonConvert.DeserializeObject<DMRProfile>(jsonString);
+        DMRProfile dMRProfile = Serializer.Deserialize(profile_path);
+
         string roll;
 
         if (IsDateExpired(dMRProfile) || reroll)

@@ -1,0 +1,25 @@
+﻿<Window x:Class="DCSModuleRandomiser.WindowsPanels.ProfilEditor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DCSModuleRandomiser.WindowsPanels"
+        mc:Ignorable="d"
+        Title="ProfilEditor" Height="450" Width="800">
+    <Grid>
+        <Grid Margin="0,0,300,0">
+            <Grid Margin="0,0,0,355">
+                <Grid>
+                    <Label x:Name="LB_Profil" Content="LB_Profil" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                </Grid>
+                <Grid Margin="0,40,0,0" Grid.Column="4">
+                    <Label Content="MinDay" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                    <TextBox x:Name="TB_MinDay" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="60" Margin="60,0,0,0"/>
+                    <Label Content="MaxDay" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="120,0,0,0"/>
+                    <TextBox x:Name="TB_MaxDay" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="60" Margin="180,0,0,0"/>
+                </Grid>
+            </Grid>
+            <Canvas x:Name="CV_Cam" Margin="10,101,10,10" Background="#FFECECEC"/>
+        </Grid>
+    </Grid>
+</Window>
